@@ -3,46 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products - My Website</title>
+    <title>Products - Electronics Shop</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <div class="logo">
-            <h1>My Website</h1>
-        </div>
+        <h1>Products</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="index.html" id="logout">Logout</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section class="product-list">
-            <h2>Our Products</h2>
-            <div class="product">
-                <img src="https://via.placeholder.com/150" alt="Product 1">
-                <p>Product 1</p>
-                <p>$19.99</p>
+    <section id="products">
+        <h2>Available Products</h2>
+        <div class="product-container">
+            <div class="product" data-name="Smartphone" data-price="40000" data-description="High-end smartphone with latest features.">
+                <h3>Smartphone</h3>
+                <p>Price: ₹40,000</p>
+                <button class="view-details">View Details</button>
+                <button class="add-to-cart">Add to Cart</button>
             </div>
-            <div class="product">
-                <img src="https://via.placeholder.com/150" alt="Product 2">
-                <p>Product 2</p>
-                <p>$29.99</p>
+            <div class="product" data-name="Laptop" data-price="75000" data-description="Powerful laptop suitable for gaming and work.">
+                <h3>Laptop</h3>
+                <p>Price: ₹75,000</p>
+                <button class="view-details">View Details</button>
+                <button class="add-to-cart">Add to Cart</button>
             </div>
-            <div class="product">
-                <img src="https://via.placeholder.com/150" alt="Product 3">
-                <p>Product 3</p>
-                <p>$39.99</p>
-            </div>
-        </section>
-    </main>
+            <!-- Add more products as needed -->
+        </div>
+    </section>
 
-    <footer>
-        <p>&copy; 2024 My Website - All Rights Reserved</p>
-    </footer>
+    <div id="product-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3 id="modal-product-name"></h3>
+            <p id="modal-product-description"></p>
+            <p id="modal-product-price"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
