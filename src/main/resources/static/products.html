@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products - Electronics Store</title>
+    <title>Electronics Store</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Products</h1>
+        <h1>Electronics Store</h1>
         <nav>
             <ul>
                 <li><a href="cart.html">Cart</a></li>
@@ -16,38 +16,142 @@
             </ul>
         </nav>
     </header>
-    <section class="product-grid">
-        <div class="product" data-name="Laptop" data-price="70000">
-            <h3>Laptop</h3>
-            <p>Price: ₹70,000</p>
-            <button class="add-to-cart">Add to Cart</button>
+
+    <section class="categories">
+        <!-- Laptops Category -->
+        <div class="category">
+            <h2>Laptops</h2>
+            <div class="category-products">
+                <!-- Dell -->
+                <div class="product" data-name="Dell Inspiron Laptop" data-price="70000">
+                    <h3>Dell Inspiron Laptop</h3>
+                    <p>Brand: Dell</p>
+                    <p>Price: ₹70,000</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <!-- HP -->
+                <div class="product" data-name="HP Pavilion Laptop" data-price="80000">
+                    <h3>HP Pavilion Laptop</h3>
+                    <p>Brand: HP</p>
+                    <p>Price: ₹80,000</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <!-- Apple -->
+                <div class="product" data-name="MacBook Air" data-price="100000">
+                    <h3>MacBook Air</h3>
+                    <p>Brand: Apple</p>
+                    <p>Price: ₹1,00,000</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
         </div>
-        <div class="product" data-name="Mobile" data-price="25000">
-            <h3>Mobile</h3>
-            <p>Price: ₹25,000</p>
-            <button class="add-to-cart">Add to Cart</button>
+
+        <!-- Mobiles Category -->
+        <div class="category">
+            <h2>Mobiles</h2>
+            <div class="category-products">
+                <!-- Samsung -->
+                <div class="product" data-name="Samsung Galaxy S23" data-price="85000">
+                    <h3>Samsung Galaxy S23</h3>
+                    <p>Brand: Samsung</p>
+                    <p>Price: ₹85,000</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <!-- Apple -->
+                <div class="product" data-name="iPhone 15" data-price="120000">
+                    <h3>iPhone 15</h3>
+                    <p>Brand: Apple</p>
+                    <p>Price: ₹1,20,000</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <!-- OnePlus -->
+                <div class="product" data-name="OnePlus 11" data-price="60000">
+                    <h3>OnePlus 11</h3>
+                    <p>Brand: OnePlus</p>
+                    <p>Price: ₹60,000</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
         </div>
-        <div class="product" data-name="Tablet" data-price="15000">
-            <h3>Tablet</h3>
-            <p>Price: ₹15,000</p>
-            <button class="add-to-cart">Add to Cart</button>
+
+        <!-- Tablets Category -->
+        <div class="category">
+            <h2>Tablets</h2>
+            <div class="category-products">
+                <!-- Samsung -->
+                <div class="product" data-name="Samsung Galaxy Tab S8" data-price="45000">
+                    <h3>Samsung Galaxy Tab S8</h3>
+                    <p>Brand: Samsung</p>
+                    <p>Price: ₹45,000</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <!-- Apple -->
+                <div class="product" data-name="iPad Pro 11" data-price="85000">
+                    <h3>iPad Pro 11</h3>
+                    <p>Brand: Apple</p>
+                    <p>Price: ₹85,000</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
         </div>
-        <div class="product" data-name="Smartwatch" data-price="10000">
-            <h3>Smartwatch</h3>
-            <p>Price: ₹10,000</p>
-            <button class="add-to-cart">Add to Cart</button>
+
+        <!-- Smartwatches Category -->
+        <div class="category">
+            <h2>Smartwatches</h2>
+            <div class="category-products">
+                <!-- Apple -->
+                <div class="product" data-name="Apple Watch Series 9" data-price="50000">
+                    <h3>Apple Watch Series 9</h3>
+                    <p>Brand: Apple</p>
+                    <p>Price: ₹50,000</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <!-- Samsung -->
+                <div class="product" data-name="Samsung Galaxy Watch 6" data-price="25000">
+                    <h3>Samsung Galaxy Watch 6</h3>
+                    <p>Brand: Samsung</p>
+                    <p>Price: ₹25,000</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
         </div>
-        <div class="product" data-name="Earbuds" data-price="3000">
-            <h3>Earbuds</h3>
-            <p>Price: ₹3,000</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-name="Headphones" data-price="5000">
-            <h3>Headphones</h3>
-            <p>Price: ₹5,000</p>
-            <button class="add-to-cart">Add to Cart</button>
+
+        <!-- Audio Devices Category -->
+        <div class="category">
+            <h2>Audio Devices</h2>
+            <div class="category-products">
+                <!-- Sony -->
+                <div class="product" data-name="Sony WF-1000XM4" data-price="15000">
+                    <h3>Sony WF-1000XM4</h3>
+                    <p>Brand: Sony</p>
+                    <p>Price: ₹15,000</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <!-- Apple -->
+                <div class="product" data-name="Apple AirPods Pro" data-price="25000">
+                    <h3>Apple AirPods Pro</h3>
+                    <p>Brand: Apple</p>
+                    <p>Price: ₹25,000</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <!-- Bose -->
+                <div class="product" data-name="Bose QuietComfort 45" data-price="32000">
+                    <h3>Bose QuietComfort 45</h3>
+                    <p>Brand: Bose</p>
+                    <p>Price: ₹32,000</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <!-- Sennheiser -->
+                <div class="product" data-name="Sennheiser Momentum 4" data-price="28000">
+                    <h3>Sennheiser Momentum 4</h3>
+                    <p>Brand: Sennheiser</p>
+                    <p>Price: ₹28,000</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
         </div>
     </section>
+
     <script src="script.js"></script>
 </body>
 </html>
